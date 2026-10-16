@@ -1,0 +1,4 @@
+fetch("https://raw.githubusercontent.com/supermanone-boop/GeoFS-All-in-one-Addon-UI-addition-/refs/heads/main/main_addon_manager_geo_ui.js")
+.then(r=>{if(!r.ok)throw Error(r.status);return r.text()})
+.then(t=>{const s=document.createElement("script");s.textContent=t;document.head.appendChild(s)})
+.catch(console.error);
