@@ -1,1 +1,1 @@
-javascript:(() => {var addonScript = document.createElement('script'); addonScript.src="https://raw.githack.com/geofs-pilot/GeoFS-All-in-one-Addon/refs/heads/main/main.js";document.body.appendChild(addonScript);})()
+javascript:(()=>{fetch("https://raw.githubusercontent.com/supermanone-boop/GeoFS-All-in-one-Addon-UI-addition-/refs/heads/main/main_addon_manager_geo_ui.js").then(r=>{if(!r.ok)throw Error(r.status);return r.text()}).then(t=>{const s=document.createElement("script");s.textContent=t;document.head.appendChild(s)}).catch(console.error)})()
